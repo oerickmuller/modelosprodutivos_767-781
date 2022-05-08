@@ -1,0 +1,27 @@
+{
+  "version": "2.0",
+  "app_name": "primeiro_projeto",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "dev",
+      "environment_variables": {
+        "NOME_BUCKET": "analisedados-lcemp",
+        "NOME_ARQUIVO": "upload.json"
+      }
+    },
+    "homolog": {
+      "api_gateway_stage": "homolog",
+      "environment_variables": {
+        "NOME_BUCKET": "hd7s7das-dados-homolog",
+        "NOME_ARQUIVO": "upload.json"
+      }
+    },
+    "prod": {
+      "api_gateway_stage": "prod",
+      "environment_variables": {
+        "NOME_BUCKET": "prod_bucket",
+        "NOME_ARQUIVO": "upload_2022_04.json"
+      }
+    }
+  }
+}
